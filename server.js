@@ -5,7 +5,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-
 const database =  {
     users: [
         {
@@ -39,7 +38,6 @@ app.post('/signin', (req, res) => {
            res.status(400).json('error logging in')
        }
 })
-
 
 app.post('/register', (req, res) => {
     const { email, name, password } = req.body;
