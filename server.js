@@ -36,10 +36,10 @@ app.post('/signin', (req, res) => {
           })
           .catch(err => res.status(400).json('unable to get user'))
       } else {
-        res.status(400).json('wrong credentials')
+        res.status(400).json('Wrong credentials')
       }
     })
-    .catch(err => res.status(400).json('wrong credentials'))
+    .catch(err => res.status(400).json('Wrong credentials'))
 })
 
 app.post('/register', (req, res) => {
@@ -67,7 +67,7 @@ app.post('/register', (req, res) => {
       .then(trx.commit)
       .catch(trx.rollback)
     })
-    .catch(err => res.status(400).json('unable to register'))
+    .catch(err => res.status(400).json('Unable to register'))
 })
 
 app.get('/profile/:id', (req, res) => {
@@ -80,7 +80,7 @@ app.get('/profile/:id', (req, res) => {
         res.status(400).json('Not found')
       }
     })
-    .catch(err => res.status(400).json('error getting user'))
+    .catch(err => res.status(400).json('Error getting user'))
 })
 
 app.put('/image', (req, res) => {
@@ -91,9 +91,9 @@ app.put('/image', (req, res) => {
   .then(entries => {
     res.json(entries[0]);
   })
-  .catch(err => res.status(400).json('unable to get entries'))
+  .catch(err => res.status(400).json('Unable to get entries'))
 })
 
 app.listen(3000, ()=> {
-  console.log('app is running on port 3000');
+  console.log('Server is running on port 3000');
 })
