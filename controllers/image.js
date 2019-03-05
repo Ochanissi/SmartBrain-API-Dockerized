@@ -27,5 +27,5 @@ const handldeImagePut = (db) => (req, res) => {
   }
 
   module.export = {
-      handldeImagePut: handleProfileGet
+      handldeImagePut: handldeImagePut
   };
