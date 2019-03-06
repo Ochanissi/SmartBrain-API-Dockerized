@@ -13,7 +13,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    connectionString : process.end.DATABASE_URL,
+    connectionString : process.env.DATABASE_URL,
     ssd: true
   }
 });
