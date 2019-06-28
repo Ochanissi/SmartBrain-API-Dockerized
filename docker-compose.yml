@@ -9,4 +9,6 @@ services:
     working_dir: /usr/src/smartbrain-api
     ports:
       - "3000:3000"
+    volumes:
+      - ./:/usr/src/smartbrain-api
     
