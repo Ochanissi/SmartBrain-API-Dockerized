@@ -19,14 +19,32 @@ const image = require('./controllers/image');
 //   }
 // });
 
+// const db = knex({
+//   client: 'pg',
+//   connection: {
+//     host : '127.0.0.1',
+//     user : 'postgres',
+//     password : 'YOUR_DB_PASSWORD_HERE',
+//     database : 'smart-brain'
+//   }
+// });
+
+
+// const db = knex({
+  //   client: 'pg',
+  //   connection: {
+    //     host : process.env.POSTGRES_HOST,
+    //     user : process.env.POSTGRES_USER,
+    //     password : process.env.POSTGRES_PASSWORD,
+    //     database : process.env.POSTGRES_DB
+    //   }
+    // });
+
+console.log(process.env.POSTGRES_USER, process.env.POSTGRES_PASSWORD);
+    
 const db = knex({
   client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'YOUR_DB_PASSWORD_HERE',
-    database : 'smart-brain'
-  }
+  connection: process.env.POSTGRES_URI
 });
 
 const app = express();
