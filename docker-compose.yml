@@ -30,7 +30,8 @@ services:
       POSTGRES_DB: smart-brain-docker
       POSTGRES_HOST: postgres
     # container_name: postgres
-    image: postgres
+    # image: postgres
+    build: ./postgres
     ports:
       # - "5432:5432"
        - "5432"
