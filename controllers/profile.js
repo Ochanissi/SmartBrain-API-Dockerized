@@ -11,7 +11,7 @@ const handleProfileGet = (db) => (req, res) => {
       .catch(err => res.status(400).json('Error getting user'))
   }
 
-  const handleProfileUpdate = (req, req, db) => {
+  const handleProfileUpdate = (req, res, db) => {
     const { id } = req.params;
     const { name, age, pet } = req.body.formInput;
     db('users')
