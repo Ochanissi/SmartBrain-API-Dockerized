@@ -35,10 +35,18 @@ const handleSignin = (db, bcrypt, req, res) => {
 
   }
 
+  const setToken = (key, value) => {
+    return Promise.resolve(redisCLient.set(key, value))
+  }
+
   const createSessions = (user) => {
     // JWT token, return user data
     const { umail, id } = user;
     const token = signToken(email);
+    return setToken(token, id)
+      .then(() => { 
+        return { success: 'true', userId: id, token }})
+      .catch(console.log)
     return { success: 'true', 'userId': id, token}
   }
 
