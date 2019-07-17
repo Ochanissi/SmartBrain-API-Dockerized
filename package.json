@@ -1,11 +1,11 @@
 {
   "name": "smartbrain-api-dockerized",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon --legacy-watch server.js"
   },
-  "author": "",
+  "author": "Mirel Bitoi",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -18,19 +18,18 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.16.3",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.10",
     "pg": "^7.8.1",
     "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ochanissi/SmartBrain-API-Dockerized.git"
   },
-  "author": "Mirel Bitoi",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ochanissi/SmartBrain-API-Dockerized/issues"
   },
-  "homepage": "https://github.com/Ochanissi/SmartBrain-API-Dockerized#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/Ochanissi/SmartBrain-API-Dockerized#readme"
 }
