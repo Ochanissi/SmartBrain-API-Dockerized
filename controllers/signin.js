@@ -25,7 +25,7 @@ const handleSignin = (db, bcrypt, req, res) => {
       .catch(err => Promise.reject('Wrong credentials'))
   }
 
-  const getAuthTokenId = (req, req) => {
+  const getAuthTokenId = (req, res) => {
     const { authorization } = req.headers;
     return redisClient.get(authorization, (err, reply) => {
       if (err || !reply) {
