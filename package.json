@@ -1,5 +1,5 @@
 {
-  "name": "smartbrain-api",
+  "name": "smartbrain-api-dockerized",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,15 @@
     "pg": "^7.8.1",
     "redis": "^2.8.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ochanissi/SmartBrain-API-Dockerized.git"
+  },
+  "author": "Mirel Bitoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ochanissi/SmartBrain-API-Dockerized/issues"
+  },
+  "homepage": "https://github.com/Ochanissi/SmartBrain-API-Dockerized#readme",
   "devDependencies": {}
 }
