@@ -22,7 +22,7 @@
     "redis": "^2.8.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^2.0.2"
   },
   "repository": {
     "type": "git",
